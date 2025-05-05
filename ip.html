@@ -5,11 +5,10 @@
 </head>
 <body>    
     <script type="text/javascript">
-        function getIP(json) {
-            //document.getElementById("ip").innerText = json.ip;
-			document.write("<p id='ip'>"+json.ip+"</p>")
+        function getIP(json) {            
+		document.write("<p id='ip'>"+json.ip+"</p>")
         }
     </script>
-	<script type="text/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+    <script type="text/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </body>
 </html>
