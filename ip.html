@@ -2,9 +2,13 @@
 <html lang="ca">
 <head>
   <meta charset="UTF-8" />
-  <title>Obtenir IP pública</title>
+  <title>Obtenir IP pública</title>  
+</head>
+<body>  
+  <p id="ip">Carregant...</p>  
+</body>
   <script>
-    async function obtenirIP() {
+    function obtenirIP() {
       try {
         const resposta = await fetch("https://api.ipify.org?format=json");
         const dades = await resposta.json();
@@ -14,11 +18,6 @@
         console.error(error);
       }
     }
-
     window.onload = obtenirIP;
   </script>
-</head>
-<body>  
-  <p id="ip">Carregant...</p>  
-</body>
 </html>
