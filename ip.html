@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Obtener IP del Cliente</title>
+    <title>Obtener IP del Cliente</title>    
 </head>
-<body>
-    <p id="ip"></p>
+<body>    
     <script type="text/javascript">
         function getIP(json) {
-            document.getElementById("ip").innerText = json.ip;
+            //document.getElementById("ip").innerText = json.ip;
+			document.write("<p id='ip'>"+json.ip+"</p>")
         }
     </script>
-    <script type="text/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+	<script type="text/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </body>
 </html>
